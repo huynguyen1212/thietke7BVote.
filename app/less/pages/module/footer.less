@@ -1,0 +1,92 @@
+.footer {
+  background: #00021b;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  font-size: 17px;
+  .footer-top {
+    padding-left: 42px;
+    padding-right: 18px;
+    text-transform: uppercase;
+    margin-top: -8px;
+    .link {
+      color: #fff;
+      float: left;
+      text-decoration: underline;
+      font-family: "Josefin_san";
+    }
+    .link:last-child {
+      float: right;
+    }
+  }
+  .footer-main {
+    text-align: center;
+    padding-top: 6px;
+    .link {
+      display: inline-block;
+      margin-right: 30px;
+      font-weight: 400;
+      font-family: "Josefin_san";
+    }
+    .title {
+      padding: 31px 0;
+      font-size: 13.6px;
+      font-family: "Josefin_san";
+    }
+    .desc {
+      font-size: 16px;
+      margin: unset;
+      line-height: 25px;
+      font-family: "Josefin_san";
+    }
+  }
+  .footer-bottom {
+    position: relative;
+    margin-top: 7px;
+    padding-bottom: 33px;
+    .desc {
+      margin: 0;
+      font-size: 15.5px;
+      text-align: center;
+      font-family: "Josefin_san";
+      a {
+        color: #0edc8d;
+        display: inline-block;
+      }
+    }
+  }
+  &:after {
+    content: "";
+    background: linear-gradient(rgba(0, 2, 27, 0.55), #00021b);
+    height: 70px;
+    display: block;
+    left: 0;
+    bottom: 100%;
+    position: absolute;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .footer .footer-top {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+    padding-bottom: 49px;
+  }
+}
